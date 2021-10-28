@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>audio</title>
+</head>
+<body>
+    <div class="container">
+
+        <audio id="music">
+            <source src="./audio/queen.ogg" type="audio/ogg">
+            <source src="./audio/queen.mp3" type="audio/mpeg">
+        </audio>
+
+        <div class="image">
+            <img id="banner" src="./assets/banner.jpeg">
+        </div>
+
+        <div class="progress">
+            <span id="tempo_atual">00:00:00</span> /
+            <progress id="barra_progresso" max="0" value="0"></progress>
+            <span id="tempo_total">00:00:00</span>
+        </div>
+
+        <div class="controle" id="control" onmouseover="mostrarBotoes(this)" onmouseout="esconderBotoes(this)">
+            <img class="btn" onclick="down()" src="./assets/volume_down.png">
+            <img class="btn" onclick="retroceder()" src="./assets/back.png">
+            <img id="play" class="btn" onclick="play()" src="./assets/play.png">
+            <img id="pause" class="btn" onclick="pause()" src="assets/pause.png">
+            <img class="btn" onclick="stop()" src="./assets/stop.png">
+            <img class="btn" onclick="avancar()" src="./assets/foward.png">
+            <img class="btn" onclick="up()" src="./assets/volume_up.png">
+        </div>
+
+    </div>
+
+<script src="./JS/app.js"></script>
+</body>
+</html>
+
+
+
+
+
